@@ -8,7 +8,6 @@ def queens(num=8, state=()):
 				for r in queens(num, state + (pos,)):
 					yield(pos,) + r
 
-
 def cf(state, nextx):
 	nexty = len(state)
 	for i in range(nexty):
